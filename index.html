@@ -350,7 +350,7 @@
     <div class="container">
         <div class="header">
             <div class="nav-tabs">
-                <button class="nav-tab active" onclick="showSection('about', this)">About</button>
+                <button class="nav-tab active" onclick="showSection('about', this)">Home</button>
                 <button class="nav-tab" onclick="showSection('projects', this)">Projects</button>
                 <button class="nav-tab" onclick="showSection('resume', this)">Resume</button>
                 <button class="nav-tab" onclick="showSection('contact', this)">Contact</button>
@@ -361,34 +361,39 @@
 
         <!-- About Section -->
         <div id="about" class="content-section active">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">Home</h2>
             <div class="profile-header">
-                <div class="profile-image"></div>
-                <div class="profile-info">
-                    <h1>Iain Roman Bustillos</h1>
-                    <p>Data Science Undergrad | Machine Learning Enthusiast</p>
-                    <p>Hi, I’m Iain – a data science student at UC San Diego with a strong interest in machine learning, healthcare, and fairness in AI. I enjoy applying statistical and programming skills to solve meaningful problems, whether it’s building predictive models to support patient care or exploring how data can improve everyday decisions.</p>
-                    <p>I’ve worked on projects ranging from scalable analytics with Spark to healthcare readmission prediction models. I value clarity, integrity, and making a positive impact in my community.</p>
-                    <p>Outside of data science, I enjoy playing guitar, learning about music theory, and staying active at the gym. I’m currently seeking opportunities to grow as a data scientist and contribute to projects that make a difference</p>
+                <div class="profile-image">
+                    <img src="/images/ikrvb_pic.jpg" alt="Iain Bustillos" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
                 </div>
+                <div>
+                    <h1 style="font-size:2.2rem; color:#333; margin-bottom:0;">Iain Roman Bustillos</h1>
+                    <p style="margin-top:4px; color:#666;">Data Science Undergrad | Machine Learning Enthusiast</p>
+                </div>
+            </div>
+            <div class="profile-info">
+                
+                <p>Hi, I’m Iain – a data science student at UC San Diego with a strong interest in machine learning, healthcare, and fairness in AI. I enjoy applying statistical and programming skills to solve meaningful problems, whether it’s building predictive models to support patient care or exploring how data can improve everyday decisions.</p>
+                <p>I’ve worked on projects ranging from scalable analytics with Spark to healthcare readmission prediction models. I value clarity, integrity, and making a positive impact in my community.</p>
+                <p>Outside of data science, I enjoy playing guitar, learning about music theory, and staying active at the gym. I’m currently seeking opportunities to grow as a data scientist and contribute to projects that make a difference in our community.</p>
             </div>
             
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Programming</h3>
-                    <p>Python, R, SQL, JavaScript</p>
+                    <p>Python, SQL, JavaScript, Java, HTML, R</p>
                 </div>
                 <div class="skill-card">
                     <h3>Machine Learning</h3>
-                    <p>Scikit-learn, TensorFlow, PyTorch</p>
+                    <p>Scikit-learn</p>
                 </div>
                 <div class="skill-card">
                     <h3>Data Visualization</h3>
-                    <p>Matplotlib, Seaborn, D3.js, Tableau</p>
+                    <p>Matplotlib, Seaborn, D3.js</p>
                 </div>
                 <div class="skill-card">
                     <h3>Big Data</h3>
-                    <p>Spark, Hadoop, MongoDB, PostgreSQL</p>
+                    <p>Spark, Hadoop, PostgreSQL</p>
                 </div>
             </div>
         </div>
@@ -398,35 +403,38 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Customer Churn Prediction</h3>
-                    <p>Developed a machine learning model to predict customer churn for a telecommunications company, achieving 92% accuracy using ensemble methods.</p>
+                    <h3>A Study Run by Power Outages</h3>
+                    <p>A project in which I studied and made visualizations about different outages all across the United States across many years. I made a model to predict how much energy a city will consume depending on different variables.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Scikit-learn</span>
                         <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">XGBoost</span>
+                        <a href="https://github.com/jetyue04/dsc106_finalproj" class="tech-tag external-link" target="_blank">GitHub Repo</a>
+                        <a href="https://ikrvbustil.github.io/poweroutages-sum24/" class="tech-tag external-link" target="_blank">Final Assessment</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3>Stock Price Prediction</h3>
-                    <p>Built a deep learning model using LSTM networks to predict stock prices with real-time data integration and interactive visualization dashboard.</p>
+                    <h3>Mice Body Temp. Variability</h3>
+                    <p>Analyzed 14-day body temperature data from 26 mice using D3.js to visualize variability trends, revealing that female mice exhibited lower cumulative variance than males, challenging long-standing research assumptions.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Streamlit</span>
-                        <span class="tech-tag">Yahoo Finance API</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <a href="https://github.com/jetyue04/dsc106_finalproj" class="tech-tag external-link" target="_blank">GitHub Repo</a>
+                        <a href="https://jetyue04.github.io/dsc106_finalproj/" class="tech-tag external-link" target="_blank">Live Demo</a>
                     </div>
                 </div>
-                
+
                 <div class="project-card">
-                    <h3>Sentiment Analysis Dashboard</h3>
-                    <p>Created a real-time sentiment analysis tool for social media data using NLP techniques and deployed it as a web application.</p>
+                    <h3>Back So Soon? - Using Data Science to Reduce Preventable Readmissions</h3>
+                    <p>Conducted comprehensive analysis on preventable hospital readmissions, focusing on ethical considerations and data science applications in healthcare decision-making.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Twitter API</span>
+                        <span class="tech-tag">Ethical Considerations</span>
+                        <span class="tech-tag">Google Slides</span>
+                        <span class="tech-tag">Video Editing</span>
+                        <a href="https://docs.google.com/presentation/d/1RKni1AwsTnoMd6WfntuZMSqJBBJvJh8i1lcZ5JMrbek/edit?usp=sharing" class="tech-tag external-link" target="_blank">Final Slides</a>
                     </div>
                 </div>
             </div>
@@ -441,30 +449,43 @@
                 <div class="resume-item">
                     <h4>Bachelor of Science in Data Science</h4>
                     <div class="company">University of California, San Diego</div>
-                    <div class="date">Expected May 2025</div>
+                    <div class="date">Expected Spring 2026</div>
                     <p>Relevant Coursework: Machine Learning, Statistical Analysis, Database Systems, Data Mining, Big Data Analytics</p>
-                    <p>GPA: 3.8/4.0</p>
+                    <p>GPA: 2.9</p>
+                </div>
+                <div class="resume-item">
+                    <h4>High School Diploma</h4>
+                    <div class="company">Monte Vista High School, Spring Valley</div>
+                    <div class="date">Graduated June 2022</div>
                 </div>
             </div>
 
             <div class="resume-section">
                 <h3>Experience</h3>
                 <div class="resume-item">
-                    <h4>Data Science Intern</h4>
-                    <div class="company">Tech Solutions Inc.</div>
-                    <div class="date">June 2024 - August 2024</div>
-                    <p>• Analyzed customer behavior data to identify trends and patterns using Python and SQL</p>
-                    <p>• Built predictive models that improved customer retention by 15%</p>
-                    <p>• Created interactive dashboards using Tableau for stakeholder presentations</p>
+                    <h4>Construction Worker</h4>
+                    <div class="company">Easy Deal Painting</div>
+                    <div class="date">June 2025 - Present</div>
+                    <p>• Assisted with painting, surface preparation, and site clean-up for residential projects</p>
+                    <p>• Worked collaboratively with team members to ensure timely completion of tasks and high-quality results</p>
+                    <p>• Maintained safety standards and followed company protocols on job sites</p>
+                </div>
+
+                <div class="resume-item">
+                    <h4>Youth Leader</h4>
+                    <div class="company">Iglesia La Roca</div>
+                    <div class="date">January 2020 - Present</div>
+                    <p>• Led youth group programs, organizing activities, including teaching weekly lessons focused on spiritual growth and life skills for young members</p>
+                    <p>• Collaborated with church leadership and local nonprofits to plan community outreach and youth-centered initiatives</p>
                 </div>
                 
                 <div class="resume-item">
-                    <h4>Research Assistant</h4>
-                    <div class="company">UCSD Data Science Lab</div>
-                    <div class="date">January 2024 - Present</div>
-                    <p>• Conducting research on machine learning applications in healthcare</p>
-                    <p>• Processing and analyzing large medical datasets using Python and R</p>
-                    <p>• Co-authored 1 paper submitted to a peer-reviewed conference</p>
+                    <h4>Tutor</h4>
+                    <div class="company">Self-Employed</div>
+                    <div class="date">February 2017 - December 2022</div>
+                    <p>• Increased student comprehension by utilizing personalized teaching methods and adapting to individual learning styles, including those with learning disabilities</p>
+                    <p>• Collaborated with students to complete homework, identify lagging skills, and address areas of weakness, with special attention to those with learning challenges</p>
+                    <p>• Provided one-on-one tutoring sessions, tailoring instruction to meet the specific needs of each student while also promoting independent learning skills</p>
                 </div>
             </div>
 
@@ -472,11 +493,11 @@
                 <h3>Skills</h3>
                 <div class="resume-item">
                     <h4>Technical Skills</h4>
-                    <p><strong>Programming Languages:</strong> Python, R, SQL, JavaScript, Java</p>
-                    <p><strong>Machine Learning:</strong> Scikit-learn, TensorFlow, PyTorch, Keras</p>
+                    <p><strong>Programming Languages:</strong> Python, SQL, JavaScript, Java, HTML, R</p>
+                    <p><strong>Machine Learning:</strong> Scikit-learn</p>
                     <p><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn</p>
-                    <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</p>
-                    <p><strong>Tools:</strong> Git, Docker, Jupyter, Tableau, Power BI</p>
+                    <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+                    <p><strong>Tools:</strong> Git, Jupyter</p>
                 </div>
             </div>
         </div>
@@ -485,10 +506,9 @@
         <div id="contact" class="content-section">
             <h2 class="section-title">Contact</h2>
             <div style="text-align: center; font-size: 1.2rem; line-height: 2;">
-                <p><strong>Email:</strong> john.doe@email.com</p>
-                <p><strong>LinkedIn:</strong> linkedin.com/in/johndoe</p>
-                <p><strong>GitHub:</strong> github.com/johndoe</p>
-                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> bustillosiain@gmail.com</p>
+                <p><strong>GitHub:</strong> github.com/ikrvb1</p>
+                <p><strong>Phone:</strong> (619) 721-4195</p>
             </div>
         </div>
     </div>
